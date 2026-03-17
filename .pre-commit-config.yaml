@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-model-metrics
+        name: Vérifier les métriques du modèle
+        entry: python metrics/evaluate.py
+        language: system
+        pass_filenames: false

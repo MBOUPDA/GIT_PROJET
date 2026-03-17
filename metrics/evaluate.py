@@ -11,9 +11,9 @@ def evaluate_models():
          X_train, X_test, y_train, y_test, max_words, max_len = pickle.load(f)
 
     models_to_evaluate = {
-        'DNN_Base': 'dnn_wine_model.keras',
-        'BiLSTM': 'lstm_wine_model.keras',
-        'CNN_1D': 'cnn_wine_model.keras'
+        'DNN_Base': '../model/dnn_wine_model.keras',
+        'BiLSTM': '../model/lstm_wine_model.keras',
+        'CNN_1D': '../model/cnn_wine_model.keras'
     }
     
     results = []

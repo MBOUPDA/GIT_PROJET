@@ -1,0 +1,4 @@
+Pandas
+numpy
+sckit-learn
+torch

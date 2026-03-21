@@ -1,11 +1,12 @@
 import pandas as pd
 import torch
+import torch.nn as nn
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from build_model import WineModel
 
 # Charger le dataset
-df = pd.read_csv('../data/dataset.csv')
+df = pd.read_csv('data/dataset.csv')
 
 # Nettoyer (garder quelques colonnes utiles)
 df = df[['country', 'price', 'points', 'variety']]

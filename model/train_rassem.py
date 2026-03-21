@@ -4,11 +4,11 @@ import copy
 import matplotlib.pyplot as plt 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-from build import WineModel
+from build_model import WineModel
 
 
 # Nettoyage
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('../data/dataset.csv')
 df = df[['country', 'price', 'points', 'variety']]
 df.dropna(inplace=True)
 df['target'] = (df['points'] >= 90).astype(int)
